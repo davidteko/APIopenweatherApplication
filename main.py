@@ -197,7 +197,7 @@ def view_favorites():
     DeleteButton.place(x=240, y =20)
 
 def get_weather_prediction(city, futureDateTime):
-    API_KEY = "dcfdcc3f4c3a220f9a5af83a257487f9"
+    API_KEY = ""
     response = requests.get(f"http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}&units=metric")
     data = response.json()
 
